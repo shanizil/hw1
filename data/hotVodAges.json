@@ -1,0 +1,57 @@
+{
+    "company-name":"HOT-VOD",
+    "company-id":500,
+    "ages": [{      
+        "type":"child",
+        "id":1,
+        "ageRange":"2-12",
+        "movies":[{
+            "name" :"frozen",
+            "profile":122,
+            "length":"90 minutes"
+        },{
+            "name" :"smurfs",
+            "profile":123,
+            "length":"120 minutes"
+        },{
+            "name" :"minions",
+            "profile":124,
+            "length":"150 minutes"
+        }]
+    },{
+        "type":"teen",
+        "id":2,
+        "ageRange":"3-18",
+        "movies":[{
+            "name" :"harryPotter",
+            "profile": 125,
+            "length":"180 minutes"
+        },{
+            "name" :"bringItOn",
+            "profile":126,
+            "length":"120 minutes"
+        },{
+            "name" :"twilight",
+            "profile" :127,
+            "length":"150 minutes"
+        }]
+     },{
+        "type":"adult",
+        "id":3,
+        "ageRange":"18 and above",
+        "movies":[{
+            "name" :"grease",
+            "profile": 128,
+            "length":"90 minutes"
+        },{
+            "name" :"prettyWoman",
+            "profile":129,
+            "length":"120 minutes"
+        },{
+            "name" :"titanic",
+            "profile" :130,
+            "length":"150 minutes"
+        }]
+
+    }]
+}
