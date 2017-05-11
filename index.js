@@ -15,13 +15,18 @@ app.post('/getAgeType/',(req,res) =>{
 app.get ('/getAgesTypeData/:age_id/:movie' ,(req,res) =>{ 
         res.status(200).json(age.cheakIdAndMovie(req.params.age_id,req.params.movie));
 }); 
+app.get('/' ,
+    (req,res) =>{
+    res.sendFile(`${__dirname}/index.html`);
+    });
+app.get('/includes/style.css',
+    (req,res) =>{
+    res.sendFile(`${__dirname}/includes/style.css`);
+    });
 app.all('*',(req,res) =>{ 
         res.json('not found');
 }); 
-app.get('/' ,
-    (req,res) =>{
-    res.sendFile('index.html');
-    }
+
 app.listen(port,
     () => {
         console.log(`listening on port ${port}`);
